@@ -1,0 +1,168 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.MainContainer{
+    background-color: aqua;
+    display: flex;
+    flex-flow: column nowrap;
+    height: 100vh;
+}
+
+.titleContainer
+{
+    background-color:coral;
+    margin-top: 10px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* .vd{
+    position:relative;
+    left: 1vh;
+    height: 30px;
+    width: 20vh;
+    border-radius: 10px;
+} */
+h1
+{
+    color: red;
+    text-align: center;
+}
+
+
+
+
+
+.row1
+{
+    grid-row: 0 1;
+}
+.row2
+{
+    grid-row: 1 2;
+}
+.row3
+{
+    grid-row: 2 3;
+}
+
+.Control
+{
+    margin-top: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: flex-end;
+
+}
+
+.Control button
+{
+    width: 10vh;
+    height: 10vh;
+    color: black;
+    text-transform: uppercase;
+    color: red;
+    background-color: black;
+}
+
+
+.gameContainer{
+    background-color: blueviolet;
+    margin-top: 70px;
+    margin-left: 10vh;
+    margin-right: 10vh;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+
+.gameContainer div
+{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items:flex-end;
+}
+
+.gameContainer button
+{
+    transition: all 0.4s;
+    background-image: none;
+    background-color: black;
+    margin: 20px;
+    border-radius: 50px;
+    width: 15vh;
+    height: 15vh;
+    background-size:cover;
+    background-position: center ;
+    
+}
+
+@media screen and (max-width:539px){
+    /* body{
+        background-color: red;
+    } */
+
+    .MainContainer{
+        background-color: red;
+    }
+
+    h1{
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color: black;
+    }
+
+    .Control
+    {
+        margin:10px;
+    }
+
+    .gameContainer{
+        background-color: red;
+        /* margin-top: 70px;
+        margin-left: 10vh;
+        margin-right: 10vh; */
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+    
+    
+    .gameContainer div
+    {
+        background-color: red;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+        align-items:flex-end;
+    }
+
+    .gameContainer button
+{
+    transition: all 0.4s;
+    background-image: none;
+    background-color: black;
+    margin: 10px;
+    border-radius: 30px;
+    width: 60px;
+    height: 60px;
+    background-size:cover;
+    background-position: center ;
+    
+}
+    
+}
+
+.gameContainer .hit
+{
+    background-image: url("hit_molex.png");
+}
+.gameContainer .show
+{
+    background-image:url("mole.png"); 
+}

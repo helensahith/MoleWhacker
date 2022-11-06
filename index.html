@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoleWhacker</title>
+    <link rel="stylesheet" href="base_css.css">
+    <script src="base_script.js"></script>
+
+</head>
+
+<body>
+
+    <div class="MainContainer">
+        <h1>Whack A Mole</h1>
+        <div class="titleContainer">
+            <h2>Current Score: <output id="cur_score"></h2>
+            <h2>LeaderBoard: <output id="rank"></output></h2>
+        </div>
+        <center>
+            <div class="gameContainer">
+                <div class="row1">
+                    <button id="1" onClick="onCScam(id)" class="mole"></button>
+                    <button id="2" onClick="onCScam(id)" class="mole"></button>
+                    <button id="3" onClick="onCScam(id)" class="mole"></button>
+                </div>
+                <div class="row2">
+                    <button id="4" onClick="onCScam(id)" class="mole"></button>
+                    <button id="5" onClick="onCScam(id)" class="mole"></button>
+                    <button id="6" onClick="onCScam(id)" class="mole"></button>
+                </div>
+                <div class="row3">
+                    <button id="7" onClick="onCScam(id)" class="mole"></button>
+                    <button id="8" onClick="onCScam(id)" class="mole"></button>
+                    <button id="9" onClick="onCScam(id)" class="mole"></button>
+                </div>
+            </div>
+            <div class="Control">
+                <button onclick="start()">
+                    <!-- <video class="vd" autoplay loop muted plays-inline><source src="Daily Support call - Open issues _ Microsoft Teams 2022-06-24 11-02-17.mp4"></video> -->Start
+                </button>
+                <button onclick="scamUndone()">Reset</button>
+            </div>
+        </center>
+    </div>
+</body>
+
+</html>
